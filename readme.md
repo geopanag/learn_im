@@ -1,16 +1,15 @@
+# Maximizing Influence with Graph Neural Networks
+
+The code to reproduce the analysis for ["Maximizing Influence with Graph Neural Networks"]([https://hal.science/hal-04601553/document](https://arxiv.org/pdf/2108.04623)).
+
+Start by installing the requirements.
+```bash
+pip install -r requirements.txt
+```
+
 ## Data
-The graphs stem from the [SNAP](https://snap.stanford.edu/data/) repository. The format of graphs is a weighted edgelist (with weighted cascade weights) in .inf, accompanied by an attribute file. The benchmark codes for influence maximization are adapted from [IMM](https://github.com/snowgy/Influence_Maximization/wiki/Home/), [DegreeDiscount](https://github.com/nd7141/influence-maximization/blob/master/IC/degreeDiscount.py), [PMIA](https://github.com/nd7141/influence-maximization/blob/master/IC/ArbitraryP/PMIA.py), [FINDER](https://github.com/FFrankyy/FINDER) and [DeepIS](https://github.com/xiawenwen49/DeepIS), while for influence estimation we develop a python version of [DMP](https://github.com/mateuszwilinski/dynamic-message-passing) inside "diffuse.py".
-All benchmark codes can be found in the respective folder. Unzip the data.zip in a "data" folder in the current folder.
-
-
-## Requirements
-To run this code you will need the following in python 3.5.2:
-* [pytorch 1.5.1](https://pytorch.org/)
-* [networkx 1.11](https://networkx.github.io/) 
-* [sklearn](https://scikit-learn.org/stable/) 
-* [numpy](https://www.numpy.org/)
-* [pandas](https://pandas.pydata.org/)
-* [scipy](https://www.scipy.org/)
+The graphs can be found in [SNAP](https://snap.stanford.edu/data/) repository. The format of graphs is a weighted edgelist (with weighted cascade weights) in .inf, accompanied by an attribute file. The benchmark codes for influence maximization are adapted from [IMM](https://github.com/snowgy/Influence_Maximization/wiki/Home/), [DegreeDiscount](https://github.com/nd7141/influence-maximization/blob/master/IC/degreeDiscount.py), [PMIA](https://github.com/nd7141/influence-maximization/blob/master/IC/ArbitraryP/PMIA.py), [FINDER](https://github.com/FFrankyy/FINDER) and [DeepIS](https://github.com/xiawenwen49/DeepIS), while for influence estimation we develop a python version of [DMP](https://github.com/mateuszwilinski/dynamic-message-passing) inside "diffuse.py".
+All benchmark codes can be found in the respective folder. Unzip the data.zip in the "data" folder in the current folder.
 
 
 ## Code
